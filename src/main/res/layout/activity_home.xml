@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    tools:context=".HomeActivity">
+   <android.support.constraint.ConstraintLayout
+    android:id="@+id/l2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+
+>
+
+    <ProgressBar
+            android:id="@+id/p1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/stat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+        />
+        <ProgressBar
+            android:id="@+id/p2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="75"
+            android:progressDrawable="@drawable/stat_progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+       <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
+   <RelativeLayout
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:gravity="bottom"
+   android:id="@+id/l3"
+   android:orientation="horizontal"
+       >
+    <Button
+      android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/b1"
+        android:text="food diary"
+        android:gravity="left"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:onClick="Diary"
+        android:layout_marginLeft="250dp"
+        tools:ignore="ObsoleteLayoutParam">
+    </Button>
+
+       <Button
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:id="@+id/b2"
+           android:text="@string/food_suggestion"
+           android:gravity="right"
+          android:layout_marginLeft="10dp"
+           android:layout_alignParentBottom="true"
+           android:layout_above="@+id/b1"
+           android:textColor="@color/colorPrimaryDark"
+           android:textAllCaps="false"
+           android:onClick="suggestion"></Button>
+
+
+   </RelativeLayout>
+</RelativeLayout>

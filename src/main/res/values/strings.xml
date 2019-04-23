@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">calcal</string>
+    <string name="title_activity_suggestion">Suggestion</string>
+    <string name="REGISTER">Register</string>
+    <string name="DOB">DOB</string>
+    <string name="GENDER">Gender</string>
+    <string name="WEIGHT">Weight</string>
+    <string name="HEIGHT">Height</string>
+    <string name="AGE">Age</string>
+    <string name="PASSWORD">password</string>
+    <string name="CONTACT">Contact no.</string>
+    <string name="EMAILID">Emailid</string>
+    <string name="NAME">Name</string>
+    <string name="REGISTRATION">Registration</string>
+    <string name="food_name">food name</string>
+    <string name="calories">calories</string>
+    <string name="date">Date</string>
+    <string name="submit">Submit</string>
+    <string name="food_suggestion">food suggestion</string>
+    <string name="login">Login</string>
+</resources>
